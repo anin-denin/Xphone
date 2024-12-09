@@ -9,12 +9,28 @@
   
         
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a
-            class="block w-full rounded bg-purple-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-purple-500 sm:w-auto"
-            href="#"
-          >
-            Get Started
-          </a>
+          @if (auth()->check())
+				<a
+				class="block w-full rounded bg-gradient-to-r from-blue-500 to-green-500 px-10 py-3 text-sm font-medium text-white shadow hover:from-blue-600 hover:to-green-600 focus:outline-none focus:ring active:from-blue-700 active:to-green-700 sm:w-auto"
+				href="/offer">
+					Buy Now!
+				</a>
+		
+				<a
+				class="block w-full rounded bg-gradient-to-r from-blue-500 to-green-500 px-10 py-3 text-sm font-medium text-white shadow hover:from-blue-600 hover:to-green-600 focus:outline-none focus:ring active:from-blue-700 active:to-green-700 sm:w-auto"
+				href="#">
+				Get your discount
+				</a>
+	  
+			@else
+				<a
+				class="block w-full rounded bg-purple-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-purple-500 sm:w-auto"
+				href="/auth/login"
+				>
+				Get Started
+				</a>
+          @endif
+        
   
           <a
             class="block w-full rounded px-12 py-3 text-sm font-medium text-purple-600 shadow hover:text-purple-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
