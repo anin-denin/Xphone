@@ -16,7 +16,8 @@ class AddProductForm extends Component
     public $photo = '';
     public $product_description = '';
     public $product_price = '';
-
+    
+    //category 
     public $category_id;
 
     public $all_categories;
