@@ -1,5 +1,6 @@
 <?php
 
+//ann
 use App\Livewire\AddCategory;
 use App\Livewire\ManageOrders;
 use App\Livewire\ManageProduct;
@@ -35,6 +36,7 @@ Route::group(['middleware' => 'admin'], function(){
     Route::get('/add/category', AddCategory::class);
     //editing product
     Route::get('/edit/{id}/product', EditProduct::class);
+
 
 });
 
