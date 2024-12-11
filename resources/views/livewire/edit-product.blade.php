@@ -1,15 +1,16 @@
+<!-- anin -->
 <div>
-    <livewire:bread-crumb :url="$currentUrl" />
+    {{-- <livewire:bread-crumb :url="$currentUrl" /> --}}
 <!-- Card Section -->
 <div class="max-w-4xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-gradient-to-r from-green-500 via-purple-500 to-blue-500">
     <!-- Card -->
     <div class="bg-white rounded-xl shadow p-4 sm:p-7">
-        <form wire:submit="save">
+        <form wire:submit="update">
           <!-- Section -->
           <div class="grid sm:grid-cols-12 gap-2 sm:gap-4 py-8 first:pt-0 last:pb-0 border-t first:border-transparent border-gray-200 dark:border-neutral-700 dark:first:border-transparent">
             <div class="sm:col-span-12">
               <h2 class="text-lg font-semibold text-black-800">
-                Add New iPhone
+               Edit iPhone Details
               </h2>
             </div>
             <!-- End Col -->
@@ -55,8 +56,12 @@
                   {{-- // Menampilkan daftar kategori sebagai opsi dalam elemen <option>, dengan nilai berdasarkan ID kategori dan teks berdasarkan nama kategori.
                   // ni tadi error disini (tandain dulu pake komen) by anin --}}
                   @foreach ($all_categories as $category)
-                    <option value="{{ $category->id }}" wire:key="{{ $category->id }}">{{$category->name}}</option>
-                  @endforeach
+                  <option value="{{ $category->id }}" wire:key="{{ $category->id }}" 
+                      {{ isset($product_details) && $product_details->category_id == $category->id ? 'selected' : '' }}>
+                      {{ $category->name }}
+                  </option>
+              @endforeach
+              
                   
                   </select>
                   @error('category_id') <span class="text-red-500">{{ $message }}</span> @enderror
@@ -114,10 +119,10 @@
             <!-- End Col -->
 
             <div class="sm:col-span-9">
-                @if ($photo) 
+                @if ($photo && is_string($photo)) 
+                <img src="{{ asset('images/ip13.png')}}" alt="default image" height="300px" width="300px" class="rounded-lg">
+                @elseif ($photo)
                   <img src="{{ $photo->temporaryUrl() }}" alt="Product image" height="300px" width="300px" class="rounded-lg">
-                @else
-                  <img src="{{ asset('images/ip13.png')}}" alt="default image" height="300px" width="300px" class="rounded-lg">
                 @endif
             </div>
       

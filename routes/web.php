@@ -8,6 +8,9 @@ use App\Livewire\ProductDetails;
 use App\Livewire\ManageCategories;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\AdminDashboard; // Import AdminDashboard class
+use App\Livewire\EditProduct;
+
+//anin
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,6 +33,8 @@ Route::group(['middleware' => 'admin'], function(){
     Route::get('/manage/categories', ManageCategories::class);
     //adding category Form 
     Route::get('/add/category', AddCategory::class);
+    //editing product
+    Route::get('/edit/{id}/product', EditProduct::class);
 
 });
 

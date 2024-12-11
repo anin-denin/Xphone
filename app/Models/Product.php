@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+//anin
+
 class Product extends Model
 {
     
@@ -22,5 +24,10 @@ class Product extends Model
     public function category()
     {
         return $this->belongsTo(Category::class); // Menyatakan bahwa model Products "belongs to" (terhubung dengan) model Category
+    }
+
+    public function scopeSearch($query, $value){
+        $query->where('name','like',"%{$value}%")
+        ->orWhere('description','like',"%{$value}%");
     }
 }
