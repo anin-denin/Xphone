@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\Product;
 use Livewire\Component;
 use App\Models\Category;
 use Livewire\Attributes\Validate;
@@ -28,7 +29,7 @@ class AddProductForm extends Component
     public function save(){
         $this->validate ([
             'product_name' => 'required',
-            'photo' => 'required|image|mime:jpg,png|max:1024',
+            'photo' => 'required|image|mimes:jpg,png|max:1024',
             'product_description' => 'required',
             'product_price' => 'required|integer',
             'category_id' => 'required',

@@ -153,6 +153,7 @@
 						  <option value="100">100</option>
 					  </select>
 				  </div>
+
 				  <!-- the links to different pages -->
 				  <div>
 				  {{ $products->links()}}
