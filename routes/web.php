@@ -1,7 +1,9 @@
 <?php
 
 //ann
+use App\Livewire\AboutUs;
 use App\Livewire\AddCategory;
+use App\Livewire\EditProduct;
 use App\Livewire\ManageOrders;
 use App\Livewire\ManageProduct;
 use App\Livewire\AddProductForm;
@@ -9,15 +11,19 @@ use App\Livewire\ProductDetails;
 use App\Livewire\ManageCategories;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\AdminDashboard; // Import AdminDashboard class
-use App\Livewire\EditProduct;
 
-//anin
+//anin up-to-date route for user n admin :D
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/product/details', ProductDetails::class);
+
+Route::get('/product/{product_id}/details',ProductDetails::class);
+
+Route::get('/about',AboutUs::class);
+
+// Route::get('/product/details', ProductDetails::class);
 
 //Admin Only yaaa... jgn di ubah notes(*anin) :D
 
@@ -37,8 +43,10 @@ Route::group(['middleware' => 'admin'], function(){
     //editing product
     Route::get('/edit/{id}/product', EditProduct::class);
 
-
+   
 });
+
+
 
 
 
