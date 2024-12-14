@@ -23,11 +23,11 @@
                 <a class="text-black font-bold transition hover:text-black/75" href="/"> Home </a>
             </li>
             <li>
-                <a class="text-black font-bold transition hover:text-black/75" href="#"> Explore More </a>
+                <a class="text-black font-bold transition hover:text-black/75" href=""> Explore More </a>
             </li>
             
             <li>
-                <a class="text-black font-bold transition hover:text-black/75" href="#"> About </a>
+                <a class="text-black font-bold transition hover:text-black/75" href="/about"> About </a>
             </li>
             
             <li>

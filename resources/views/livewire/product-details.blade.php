@@ -29,9 +29,9 @@
         </div>
     </div>
 
-    <!-- related products -->
+    <!-- related products ann-->
     <div class="my-5 px-20 pt-5">
         <h2 class ="text-2xl font-medium">Second Products</h2>
-        <livewire:product-listing />
+        <livewire:product-listing :category_id="$product->category_id" :current_product_id="$product->id"/>
     </div>
 </div>

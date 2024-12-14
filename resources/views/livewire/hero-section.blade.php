@@ -7,7 +7,7 @@
             </strong>
         </h1>
   
-        
+        <!--jan di ubah :DDDDDDDDDDD-->
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           @if (auth()->check())
 				<a
