@@ -2,6 +2,7 @@
 
 //ann
 use App\Livewire\AboutUs;
+use App\Livewire\Contacts;
 use App\Livewire\AddCategory;
 use App\Livewire\EditProduct;
 use App\Livewire\ManageOrders;
@@ -13,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\ShoppingCartComponent;
 use App\Livewire\AdminDashboard; // Import AdminDashboard class
 
-//anin up-to-date route for user n admin
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,6 +24,7 @@ Route::get('/product/{product_id}/details',ProductDetails::class);
 
 Route::get('/about',AboutUs::class);
 
+Route::get('/contacts',Contacts::class);
 
 // Rute untuk komponen Livewire
 Route::get('/shopping-cart', ShoppingCartComponent::class)->name('shopping-cart');
