@@ -3,7 +3,7 @@
     <div class="max-w-screen-lg mx-auto p-6 flex gap-10">
         <!-- Image Section -->
         <div class="w-[300px] h-[300px]">
-            <img src="{{ asset('images/ip15.png') }}" alt="product-image" class="rounded object-cover w-full h-full">
+            <img src="{{ asset('images/ip13.png') }}" alt="product-image" class="rounded object-cover w-full h-full">
         </div>
         
         <!-- Product Details Section -->

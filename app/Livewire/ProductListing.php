@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class ProductListing extends Component
 {
+
     public $products;
     public function mount($category_id){
         // dd($category_id); nampilin dari category nya
