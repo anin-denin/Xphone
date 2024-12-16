@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class ShoppingCartIcon extends Component
 {
+    
     public $cartCount = 0;
 
     protected $listeners = [

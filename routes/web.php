@@ -2,13 +2,16 @@
 
 //ann
 use App\Livewire\AboutUs;
+use App\Livewire\Contacts;
 use App\Livewire\AddCategory;
+use App\Livewire\AllProducts;
 use App\Livewire\EditProduct;
 use App\Livewire\ManageOrders;
 use App\Livewire\ManageProduct;
 use App\Livewire\AddProductForm;
 use App\Livewire\ProductDetails;
 use App\Livewire\ManageCategories;
+
 use Illuminate\Support\Facades\Route;
 use App\Livewire\ShoppingCartComponent;
 use App\Livewire\AdminDashboard; // Import AdminDashboard class
@@ -23,6 +26,10 @@ Route::get('/', function () {
 Route::get('/product/{product_id}/details',ProductDetails::class);
 
 Route::get('/about',AboutUs::class);
+
+Route::get('/contacts',Contacts::class);
+
+Route::get('/all/products',AllProducts::class);
 
 
 // Rute untuk komponen Livewire
@@ -50,6 +57,7 @@ Route::group(['middleware' => 'admin'], function(){
 
    
 });
+
 
 
 
