@@ -13,6 +13,7 @@ use App\Livewire\ProductDetails;
 use App\Livewire\ManageCategories;
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PDFcontroller;
 use App\Livewire\ShoppingCartComponent;
 use App\Livewire\AdminDashboard; // Import AdminDashboard class
 
@@ -54,6 +55,15 @@ Route::group(['middleware' => 'admin'], function(){
     Route::get('/add/category', AddCategory::class);
     //editing product
     Route::get('/edit/{id}/product', EditProduct::class);
+
+
+    //pdf reporting 
+    Route::get('/pdf',[PDFcontroller::class,'index']);
+
+    Route::get('/pdf-generate',[PDFcontroller::class,'downloadpdf']);
+    
+    Route::get('/pdf-generate', [PDFcontroller::class, 'downloadpdf'])->middleware('auth');
+
 
    
 });

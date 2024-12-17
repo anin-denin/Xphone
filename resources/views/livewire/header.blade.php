@@ -33,7 +33,11 @@
             <li>
                 <a class="text-black font-bold transition hover:text-black/75" href="/contacts"> Contacts </a>
             </li>
-            
+            <!-- pdf -->
+            <li>
+              <a class="text-black font-bold transition hover:text-black/75" href="{{ url('/pdf-generate') }}"> Download PDF </a>
+          </li>
+          
           </ul>
         </nav>
   
