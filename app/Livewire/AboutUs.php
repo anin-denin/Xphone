@@ -11,3 +11,4 @@ class AboutUs extends Component
         return view('livewire.about-us');
     }
 }
+//syerly
