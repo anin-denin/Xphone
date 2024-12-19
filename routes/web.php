@@ -13,6 +13,8 @@ use App\Livewire\ManageCategories;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\ShoppingCartComponent;
 use App\Livewire\AdminDashboard; // Import AdminDashboard class
+use Mpdf\Mpdf; //mpdf
+use App\Models\ShoppingCart;
 
 
 Route::get('/', function () {
@@ -48,6 +50,14 @@ Route::group(['middleware' => 'admin'], function(){
     Route::get('/add/category', AddCategory::class);
     //editing product
     Route::get('/edit/{id}/product', EditProduct::class);
+
+    //mpdf
+    Route::get('/view-pdf', function () {
+        $mpdf = new Mpdf();
+        $mpdf->WriteHTML('<h1>Hello World</h1>');
+        $mpdf->Output();
+    });
+    //Bima
 
    
 });
