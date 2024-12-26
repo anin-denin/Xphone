@@ -25,7 +25,10 @@ Route::get('/', function () {
 });
 
 
+
 Route::get('/product/{product_id}/details',ProductDetails::class);
+
+Route::get('/all/products',AllProducts::class);
 
 Route::get('/about',AboutUs::class);
 
@@ -80,7 +83,6 @@ Route::group(['middleware' => 'admin'], function(){
 
    
 });
-
 
 
 

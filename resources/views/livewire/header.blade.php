@@ -23,7 +23,11 @@
                 <a class="text-black font-bold transition hover:text-black/75" href="/"> Home </a>
             </li>
             <li>
+
+                <a class="text-black font-bold transition hover:text-black/75" href="/all/products"> Explore More </a>
+
                 {{-- <a class="text-black font-bold transition hover:text-black/75" href="/all/products"> Explore More </a> --}}
+
             </li>
             
             <li>
@@ -60,12 +64,29 @@
               
             </a>
         @else
-          <a
-            class="block rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
-            href="/login"
+        <a
+        class="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+        href="/login"
+      >
+        <span class="absolute -end-full transition-all group-hover:end-4">
+          <svg
+            class="size-5 rtl:rotate-180"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            Get Started
-          </a>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </span>
+      
+        <span class="text-sm font-medium transition-all group-hover:me-4"> Login </span>
+      </a>
         @endif
                   
 

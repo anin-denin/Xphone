@@ -10,34 +10,35 @@
       <!--jan di ubah :DDDDDDDDDDD-->
       <div class="mt-8 flex flex-wrap justify-center gap-4">
         @if (auth()->check())
-      <a
-      class="block w-full rounded bg-gradient-to-r from-blue-500 to-green-500 px-10 py-3 text-sm font-medium text-white shadow hover:from-blue-600 hover:to-green-600 focus:outline-none focus:ring active:from-blue-700 active:to-green-700 sm:w-auto"
-      href="/offer">
+        <a
+        class="inline-block rounded bg-teal-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+        href="#"
+        >
         Buy Now!
-      </a>
+        </a>
   
       <a
-      class="block w-full rounded bg-gradient-to-r from-blue-500 to-green-500 px-10 py-3 text-sm font-medium text-white shadow hover:from-blue-600 hover:to-green-600 focus:outline-none focus:ring active:from-blue-700 active:to-green-700 sm:w-auto"
+      class="inline-block rounded bg-purple-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
       href="#"
       >
-      Get your discount
+      Get Your Discount!
       </a>
       
     @else
       <a
-      class="block w-full rounded bg-purple-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-purple-500 sm:w-auto"
-      href="/auth/login"
+      class="inline-block rounded bg-purple-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+      href="/login"
       >
       Get Started
       </a>
         @endif
       
-        <a
-          class="block w-full rounded px-12 py-3 text-sm font-medium text-purple-600 shadow hover:text-purple-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-          href="#"
-        >
-          Learn More
-        </a>
+      <a
+        class="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-purple-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
+        href="all/products"
+      >
+        Explore More
+      </a>
       </div>
     </div>
   </div>
