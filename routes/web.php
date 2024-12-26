@@ -4,6 +4,7 @@
 use App\Livewire\AboutUs;
 use App\Livewire\Contacts;
 use App\Livewire\AddCategory;
+use App\Livewire\AllProducts;
 use App\Livewire\EditProduct;
 use App\Livewire\ManageOrders;
 use App\Livewire\ManageProduct;
@@ -20,7 +21,10 @@ Route::get('/', function () {
 });
 
 
+
 Route::get('/product/{product_id}/details',ProductDetails::class);
+
+Route::get('/all/products',AllProducts::class);
 
 Route::get('/about',AboutUs::class);
 
@@ -51,7 +55,6 @@ Route::group(['middleware' => 'admin'], function(){
 
    
 });
-
 
 
 
