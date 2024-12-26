@@ -11,7 +11,12 @@
         "devdojo/auth": "^1.0",
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
-        "livewire/livewire": "^3.5"
+        "livewire/livewire": "^3.5",
+
+        "spatie/browsershot": "^5.0"
+
+        "mpdf/mpdf": "^8.2"
+
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -72,3 +77,4 @@
     "minimum-stability": "stable",
     "prefer-stable": true
 }
+
