@@ -20,9 +20,14 @@ class User extends AuthUser
      */
     protected $fillable = [
         'name',
+        'alamat',
+        'tempat_tanggal_lahir',
         'email',
         'password',
+        'no_telp',
+        'jenis_kelamin',
         'role',
+        
     ];
 
     /**
