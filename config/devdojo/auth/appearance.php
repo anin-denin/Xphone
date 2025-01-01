@@ -43,3 +43,4 @@ return [
         'dark' => '/auth/img/favicon-dark.png',
     ],
 ];
+// syerli 
