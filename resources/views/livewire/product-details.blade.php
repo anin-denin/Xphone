@@ -35,3 +35,4 @@
         <livewire:product-listing :category_id="$product->category_id" :current_product_id="$product->id"/>
     </div>
 </div>
+<!-- Syerly -->
