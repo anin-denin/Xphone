@@ -8,13 +8,7 @@ class Contacts extends Component
 {
     public function render()
     {
-
-        return view('livewire.contacts')->title('Xphone | Contact us');
-    }
-}
-
         return view('livewire.contacts');
     }
 }
 //syerly
-
