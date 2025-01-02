@@ -48,16 +48,16 @@ Route::get('/shopping-cart', ShoppingCartComponent::class)->name('shopping-cart'
 
 // Route::get('/product/details', ProductDetails::class);
 
-//Admin Only yaaa... jgn di ubah notes(*anin) :D
+//Admin Only yaaa... jgn di ubah notes(*anin) 😄
 
 Route::group(['middleware' => 'admin'], function(){
-    
+
     Route::get('/admin/dashboard', AdminDashboard::class)->name('dashboard');
-    
+
     Route::get('/products',ManageProduct::class)->name('products');
-    
+
     Route::get('/orders', ManageOrders::class)->name('orders');
-    
+
     Route::get('/add/product', AddProductForm::class);
 
     Route::get('/manage/categories', ManageCategories::class);

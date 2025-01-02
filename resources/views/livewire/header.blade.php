@@ -40,7 +40,7 @@
 
 
             <li>
-              <a class="text-black font-bold transition hover:text-black/75" href="/view-pdf"> Pdf </a>
+              <a class="text-black font-bold transition hover:text-black/75" href="/view-pdf"> Print </a>
           </li>
             
 
