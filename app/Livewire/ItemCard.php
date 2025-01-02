@@ -41,3 +41,4 @@ class ItemCard extends Component
         return view('livewire.item-card');
     }
 }
+//Adi
