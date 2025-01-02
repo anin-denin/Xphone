@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\ShoppingCart;
 use Illuminate\Support\Facades\Auth;
 
+
 class ShoppingCartComponent extends Component
 {
     public $cartItems = [];
@@ -95,3 +96,4 @@ class ShoppingCartComponent extends Component
 }
 
 //anin
+

@@ -66,4 +66,34 @@ class EditProduct extends Component
         ->layout('admin-layout');
     }
 }
+
 //Adi
+
+
+//API di atas adalah seperti jembatan yang membantu aplikasi mengambil data tentang produk tertentu
+// (misalnya, nama, harga, dan kategori) atau memperbarui informasi produk tersebut.
+
+//  GET
+//  {
+//   "id": 1,
+//   "name": "Sample Product",
+//   "description": "Sample Description",
+//   "price": 100.00,
+//   "category_id": 2,
+//   "image": "photos/sample.jpg",
+//   "category": {
+//     "id": 2,
+//     "name": "Category Name"
+//   }
+// }
+
+// POST
+
+// {
+//     "product_name": "Updated Product",
+//     "product_description": "Updated Description",
+//     "product_price": 200.00,
+//     "category_id": 3
+//   }
+  
+
