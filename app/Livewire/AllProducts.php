@@ -11,4 +11,5 @@ class AllProducts extends Component
         return view('livewire.all-products');
     }
 }
+//zabihullah
 
