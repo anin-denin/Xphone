@@ -7,6 +7,7 @@ use App\Livewire\Contacts;
 use App\Livewire\AddCategory;
 use App\Livewire\AllProducts;
 use App\Livewire\EditProduct;
+use App\Livewire\Profile;
 use App\Livewire\ManageOrders;
 use App\Livewire\ManageProduct;
 use App\Livewire\AddProductForm;
@@ -39,7 +40,11 @@ Route::get('/about',AboutUs::class);
 Route::get('/contacts',Contacts::class);
 
 
+Route::get('/profile', Profile::class)->name('profile');
+
+
 Route::get('/all/products',AllProducts::class);
+
 
 
 
