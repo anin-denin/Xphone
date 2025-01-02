@@ -4,11 +4,10 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class AboutUs extends Component
+class AllProducts extends Component
 {
     public function render()
     {
-        return view('livewire.about-us');
+        return view('livewire.all-products');
     }
 }
-//syerly
