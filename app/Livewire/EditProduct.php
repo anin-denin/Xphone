@@ -29,7 +29,7 @@ class EditProduct extends Component
         $this->all_categories = Category::all();
     }
     public function update(){
-        //validation 
+        //validation
         $this->validate([
             'product_name' => 'required|string|max:255',
             'product_description' => 'required|string',
@@ -57,7 +57,7 @@ class EditProduct extends Component
     public function render()
     {
         // $current_url = url()->current();
-        
+
         // $explode_url = explode('/',$current_url);
         // // dd($explode_url);
         // $this->currentUrl = $explode_url[3].' '.$explode_url[5];
@@ -66,3 +66,4 @@ class EditProduct extends Component
         ->layout('admin-layout');
     }
 }
+//Adi
