@@ -22,10 +22,10 @@ return [
         'height' => '32',
     ],
     'background' => [
-        'color' => '#b549ca',
+        'color' => '#F8E6F5', 
         'image' => '',
-        'image_overlay_color' => '#000000',
-        'image_overlay_opacity' => '0.5',
+        'image_overlay_color' => '#E8F3FC', 
+        'image_overlay_opacity' => '1', 
     ],
     'color' => [
         'text' => '#212936',
