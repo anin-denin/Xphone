@@ -6,6 +6,7 @@ use App\Livewire\AboutUs;
 use App\Livewire\Contacts;
 use App\Livewire\AddCategory;
 use App\Livewire\EditProduct;
+use App\Livewire\Profile;
 use App\Livewire\ManageOrders;
 use App\Livewire\ManageProduct;
 use App\Livewire\AddProductForm;
@@ -28,6 +29,9 @@ Route::get('/product/{product_id}/details',ProductDetails::class);
 Route::get('/about',AboutUs::class);
 
 Route::get('/contacts',Contacts::class);
+
+Route::get('/profile', Profile::class)->name('profile');
+
 
 // Rute untuk komponen Livewire
 Route::get('/shopping-cart', ShoppingCartComponent::class)->name('shopping-cart');
