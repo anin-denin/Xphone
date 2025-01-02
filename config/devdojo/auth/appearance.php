@@ -22,10 +22,24 @@ return [
         'height' => '32',
     ],
     'background' => [
+
         'color' => '#F8E6F5', 
         'image' => '',
         'image_overlay_color' => '#E8F3FC', 
         'image_overlay_opacity' => '1', 
+
+
+        'color' => '#F8E6F5', 
+        'image' => '',
+        'image_overlay_color' => '#E8F3FC', 
+        'image_overlay_opacity' => '1', 
+
+        'color' => '#712caa',
+        'image' => '',
+        'image_overlay_color' => '#000000',
+        'image_overlay_opacity' => '0.84',
+
+
     ],
     'color' => [
         'text' => '#212936',
@@ -43,4 +57,6 @@ return [
         'dark' => '/auth/img/favicon-dark.png',
     ],
 ];
+
 // syerli
+
