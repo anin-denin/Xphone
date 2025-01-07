@@ -35,9 +35,9 @@
       
       <a
         class="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-purple-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
-        href="all/products"
+        href="/Xdetails"
       >
-        Explore More
+        Xdetails
       </a>
       </div>
     </div>

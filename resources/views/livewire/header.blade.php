@@ -35,7 +35,7 @@
             </li>
             <li>
 
-                <a class="text-black font-bold transition hover:text-black/75" href="/all/products"> Explore More </a>
+                <a class="text-black font-bold transition hover:text-black/75" href="/Xdetails"> Xdetails </a>
 
                 {{-- <a class="text-black font-bold transition hover:text-black/75" href="/all/products"> Explore More </a> --}}
 

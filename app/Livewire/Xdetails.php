@@ -4,10 +4,12 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class AllProducts extends Component
+class Xdetails extends Component
 {
     public function render()
     {
-        return view('livewire.all-products');
+        return view('livewire.Xdetails');
     }
 }
+//zabihullah
+

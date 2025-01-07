@@ -5,7 +5,7 @@ use Mpdf\Mpdf; //mpdf
 use App\Livewire\AboutUs;
 use App\Livewire\Contacts;
 use App\Livewire\AddCategory;
-use App\Livewire\AllProducts;
+use App\Livewire\Xdetails;
 use App\Livewire\EditProduct;
 use App\Livewire\Profile;
 use App\Livewire\ManageOrders;
@@ -30,22 +30,15 @@ Route::get('/', function () {
 });
 
 
-
 Route::get('/product/{product_id}/details',ProductDetails::class);
 
-Route::get('/all/products',AllProducts::class);
+Route::get('/Xdetails',Xdetails::class);
 
 Route::get('/about',AboutUs::class);
 
 Route::get('/contacts',Contacts::class);
 
-
 Route::get('/profile', Profile::class)->name('profile');
-
-
-Route::get('/all/products',AllProducts::class);
-
-
 
 
 // Rute untuk komponen Livewire
