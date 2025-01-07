@@ -11,5 +11,5 @@ class Xdetails extends Component
         return view('livewire.Xdetails');
     }
 }
-//zabihullah 223040119
+//zabihullah achmad
 
