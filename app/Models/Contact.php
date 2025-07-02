@@ -17,5 +17,10 @@ class Contact extends Model
         'website',
         'message',
     ];
+<<<<<<< HEAD
 
 }
+=======
+}
+
+>>>>>>> b6960eb0ed9724afb4221a64817053950667d37d

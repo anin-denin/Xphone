@@ -41,3 +41,5 @@ class ProductDetails extends Component
         return view('livewire.product-details');
     }
 }
+
+// syerly 

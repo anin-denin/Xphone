@@ -236,3 +236,4 @@
       <p class="text-xs text-gray-500">&copy; 2024. Xphone(DigitalForge). All rights reserved.</p>
     </div>
   </footer>
+  <!-- syerly -->

@@ -9,6 +9,7 @@ use App\Models\Category;
 class ProductListing extends Component
 {
     public $products;
+<<<<<<< HEAD
     public $searchTerm = '';
     public $category_id;
     public $current_product_id;
@@ -38,6 +39,14 @@ class ProductListing extends Component
             $this->products = Product::with('category')
                 ->where('name', 'like', '%' . $this->searchTerm . '%')
                 ->get();
+=======
+    public function mount($category_id){
+        // dd($category_id); nampilin dari category nya
+        if ($category_id == 0) {
+
+            $this->products = Product::with('category')->limit(4)
+            ->orderBy('created_at', 'DESC')->get();
+>>>>>>> b6960eb0ed9724afb4221a64817053950667d37d
         } else {
             $this->products = Product::with('category')
                 ->where('category_id', $this->category_id)
@@ -46,6 +55,10 @@ class ProductListing extends Component
                 ->limit(4)
                 ->get();
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b6960eb0ed9724afb4221a64817053950667d37d
     }
 
     public function render()
@@ -54,4 +67,9 @@ class ProductListing extends Component
             'categories' => Category::all()
         ]);
     }
+<<<<<<< HEAD
 }
+=======
+}
+//Adi
+>>>>>>> b6960eb0ed9724afb4221a64817053950667d37d
