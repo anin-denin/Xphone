@@ -16,7 +16,7 @@ use App\Livewire\ManageCategories;
 use Illuminate\Support\Facades\Auth;
 
 
-
+use App\Livewire\Profile;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PDFcontroller;
 use App\Livewire\ShoppingCartComponent;
@@ -40,6 +40,8 @@ Route::get('/contacts',Contacts::class);
 
 
 Route::get('/all/products',AllProducts::class);
+
+Route::get('/profile', Profile::class)->name('profile');
 
 
 
